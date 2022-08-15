@@ -23,13 +23,6 @@ dim(df)
 
 df = df %>% subset(REGION != "CT")
 
-df %>% 
-  group_by(REGION) %>% 
-  summarise(End_Year = max(OBS_YEAR))
-
-# df = df %>% 
-#   subset(REGION == "MHI")
-
 # df$lon = ifelse(df$lon < 0, df$lon + 180, df$lon)
 
 ###############
