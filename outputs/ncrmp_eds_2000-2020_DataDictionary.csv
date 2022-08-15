@@ -1,0 +1,31 @@
+Name,Type,Description
+SITE,NVARCHAR2,The 5- to 6-character code for the site surveyed. Combines a 3-letter island code with a site number.
+ISLAND,VARCHAR2,Name of island or atoll surveyed in the Pacific Islands region (REGION_NAME).
+REGION,VARCHAR2,"The name of the region surveyed in the Pacific Islands region: American Samoa, Pacific Remote Island Areas, Mariana Archipelago, main Hawaiian Islands, Northwestern Hawaiian Islands."
+DATE,DATE,Date the survey was conducted
+LATITUDE,NUMBER,"Site latitude in decimal degrees, WGS84, for the given site."
+LONGITUDE,NUMBER,"Site longitude in decimal degrees, WGS84 for the given site."
+03mo,NUMBER,"A statistically summarized environmental value (mean, max, min, ci95, sd, 5th and 95th quantiles) computed over past 3 months from any given survey date (see Column DATE)."
+01yr,NUMBER,"A statistically summarized environmental value (mean, max, min, ci95, sd, 5th and 95th quantiles) computed over past 1 year from any given survey date (Column DATE)."
+03yr,NUMBER,"A statistically summarized environmental value (mean, max, min, ci95, sd, 5th and 95th quantiles) computed over past 3 years from any given survey date (Column DATE)."
+05yr,NUMBER,"A statistically summarized environmental value (mean, max, min, ci95, sd, 5th and 95th quantiles) computed over past 5 years from any given survey date (Column DATE)."
+10yr,NUMBER,"A statistically summarized environmental value (mean, max, min, ci95, sd, 5th and 95th quantiles) computed over past 10 years from any given survey date (Column DATE)."
+10yr_01yr,NUMBER,"A statistically summarized environmental value (mean, max, min, ci95, sd, 5th and 95th quantiles) computed from ten years before but excluding the most recent year from any given survey date (Column DATE)."
+all_before,NUMBER,"A statistically summarized environmental value (mean, max, min, ci95, sd, 5th and 95th quantiles) computed over full length of the time series available from any given survey date (Column DATE)."
+DHW,NUMBER,"Decadal frequency of periods of abnormally hot seawater, defined quantitatively as the number of non-zero degree heating week events during a specific period of time, converted into a number per ten years. We ran periods of 3 months, 1 year, 3 years, 5 years, 10 years, and the full length of the DHW time series before the time of sampling, as well as ten years before but excluding the most recent year."
+major_DHW,NUMBER,"Decadal frequency of periods of abnormally hot seawater, defined quantitatively as the number of degree heating week events whose maxima reached at least 4 DHW during a specific period of time, converted into a number per ten years. We ran periods of 3 months, 1 year, 3 years, 5 years, 10 years, and the full length of the DHW time series before the time of sampling, as well as ten years before but excluding the most recent year."
+mean_maximum_DHW,NUMBER,"The mean of the maximum degree heating week value from each degree heating week event during a specific period of time. We ran periods of 3 months, 1 year, 3 years, 5 years, 10 years, and the full length of the DHW time series before the time of sampling, as well as ten years before but excluding the most recent year."
+mean_maximum_major_DHW,NUMBER,"The mean of the maximum degree heating week value from each degree heating week event that reached at least 4 DHW during a specific period of time. We ran periods of 3 months, 1 year, 3 years, 5 years, 10 years, and the full length of the DHW time series before the time of sampling, as well as ten years before but excluding the most recent year."
+maximum_DHW,NUMBER,"maximum degree heating week value from each degree heating week event during a specific period of time. We ran periods of 3 months, 1 year, 3 years, 5 years, 10 years, and the full length of the DHW time series before the time of sampling, as well as ten years before but excluding the most recent year."
+maximum_major_DHW,NUMBER,"maximum degree heating week value from each degree heating week event that reached at least 4 DHW during a specific period of time. We ran periods of 3 months, 1 year, 3 years, 5 years, 10 years, and the full length of the DHW time series before the time of sampling, as well as ten years before but excluding the most recent year."
+mean_durnal_DHW,NUMBER,"The mean duration of each degree heating week event during a specific period of time. We ran periods of 3 months, 1 year, 3 years, 5 years, 10 years, and the full length of the DHW time series before the time of sampling, as well as ten years before but excluding the most recent year."
+mean_durnal_major_DHW,NUMBER,"The mean duration of each degree heating week event that reached at least 4 DHW during a specific period of time. We ran periods of 3 months, 1 year, 3 years, 5 years, 10 years, and the full length of the DHW time series before the time of sampling, as well as ten years before but excluding the most recent year."
+maximum_maximum_DHW,NUMBER,"The maximum of the maximum degree heating week value from each degree heating week event during a specific period of time. We ran periods of 3 months, 1 year, 3 years, 5 years, 10 years, and the full length of the DHW time series before the time of sampling, as well as ten years before but excluding the most recent year."
+maximum_maximum_major_DHW,NUMBER,"The maximum of the maximum degree heating week value from each degree heating week event that reached at least 4 DHW during a specific period of time. We ran periods of 3 months, 1 year, 3 years, 5 years, 10 years, and the full length of the DHW time series before the time of sampling, as well as ten years before but excluding the most recent year."
+KdPAR,NUMBER,"Diffuse attenuation coefficient of the photosynthetically available radiation Kd(PAR), m^-1."
+SST,NUMBER,"Analysed sea surface temperature, degree_C
+"
+Chla,NUMBER,"Chlorophyll Concentration, OC3 Algorithm, mg m^-3."
+Kd490,NUMBER,"Diffuse attenuation coefficient at 490 nm, kd2 algorithm, m^-1.
+"
+PAR,NUMBER,"Photosynthetically Available Radiation, R. Frouin, einstein m-2 day-1."
